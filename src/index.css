@@ -1,10 +1,26 @@
 :root {
+  /* Cores principais do sistema */
+  --primary-green: #75b72a;
+  --primary-blue: #28337f;
+  --primary-white: #ffffff;
+
+  /* Variações para estados */
+  --green-hover: #6ba325;
+  --blue-hover: #222a6b;
+  --light-gray: #f8f9fa;
+  --medium-gray: #6c757d;
+  --dark-gray: #495057;
+
+  /* Sombras com as cores principais */
+  --green-shadow: rgba(117, 183, 42, 0.3);
+  --blue-shadow: rgba(40, 51, 127, 0.3);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  color: var(--dark-gray);
+  background-color: var(--primary-white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

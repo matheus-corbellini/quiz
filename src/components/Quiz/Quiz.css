@@ -1,7 +1,7 @@
 /* Renomeando arquivo de .module.css para .css e convertendo classes */
 .quiz-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary-white);
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
@@ -17,10 +17,11 @@
 }
 
 .quiz-progress-section {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--light-gray);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px var(--green-shadow);
+  border: 1px solid var(--light-gray);
 }
 
 .quiz-progress-header {
@@ -33,42 +34,44 @@
 .quiz-progress-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--dark-gray);
   margin: 0;
 }
 
 .quiz-progress-text {
   font-size: 1rem;
   font-weight: 600;
-  color: #667eea;
+  color: var(--primary-green);
 }
 
 .quiz-progress-bar {
   width: 100%;
   height: 8px;
-  background: #e5e7eb;
+  background: var(--primary-white);
   border-radius: 4px;
   overflow: hidden;
+  border: 1px solid var(--light-gray);
 }
 
 .quiz-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  background: var(--primary-green);
   border-radius: 4px;
   transition: width 0.3s ease;
 }
 
 .quiz-question-card {
-  background: white;
+  background: var(--primary-white);
   border-radius: 16px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 20px 25px -5px var(--blue-shadow),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   overflow: hidden;
+  border: 1px solid var(--light-gray);
 }
 
 .quiz-question-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--primary-blue);
+  color: var(--primary-white);
   padding: 2rem;
   text-align: center;
 }
@@ -88,8 +91,8 @@
 }
 
 .quiz-option-button {
-  background: white;
-  border: 2px solid #e5e7eb;
+  background: var(--primary-white);
+  border: 2px solid var(--light-gray);
   border-radius: 12px;
   padding: 1.25rem;
   cursor: pointer;
@@ -99,10 +102,10 @@
 }
 
 .quiz-option-button:hover {
-  border-color: #667eea;
-  background: #f8faff;
+  border-color: var(--primary-green);
+  background: var(--light-gray);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 8px 25px var(--green-shadow);
 }
 
 .quiz-option-button:active {
@@ -116,8 +119,8 @@
 }
 
 .quiz-option-letter {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--primary-green);
+  color: var(--primary-white);
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -131,7 +134,7 @@
 
 .quiz-option-text {
   font-size: 1.1rem;
-  color: #374151;
+  color: var(--dark-gray);
   line-height: 1.5;
   font-weight: 500;
 }

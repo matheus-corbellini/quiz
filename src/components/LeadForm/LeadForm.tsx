@@ -67,7 +67,7 @@ const LeadForm: React.FC<LeadFormProps> = ({
         <div className="lead-form-header">
           <h2 className="lead-form-title">Descubra seu resultados </h2>
           <p className="lead-form-subtitle">
-            Preencha o formulário abaixo para realizar o teste edescobrir seu
+            Preencha o formulário abaixo para realizar o teste e descobrir seu
             potencial
           </p>
         </div>
